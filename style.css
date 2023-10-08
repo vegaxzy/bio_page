@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 20%;
+}
+
+@media (min-aspect-ratio: 16/10){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/10){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.name {
+    color: white;
+    position: absolute;
+    top: 50%;
+}
+
+/* NAPIS VEGAXZY MARIGN */
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 0.4em white;
+    letter-spacing: 0.7em;
+    font-size: 3rem;
+    margin-top: 21%;
+}
+
+a {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-shadow: 0 0 0.6em ;
+    transition: transform 0.3s;
+}
+
+#odnosniki {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+a:hover {
+    transform: scale(1.2);
+} 
+
+img {
+    height: 32px;
+    width: 32px;
+}
+
+#container {
+    margin-bottom: 7%;
+    height: 20%;
+}
+
+#przycisk {
+    background: transparent;
+    border: none;
+    width: 99%;
+    size: 0.5;
+    height: 32px;
+    margin-top: 20px;
+}
